@@ -5,16 +5,15 @@ This boilerplate is used to write React code with Webpack.
 Steps to reproduce this boilerplate on your own:
 
 - Initialize package.json
-  ...`npm init -y`
+  `npm init -y`
 
 - Setup Webpack, Webpack CLI and the Webpack Dev Server
-  ...`npm install webpack webpack-cli webpack-dev-server --save-dev`
+  `npm install webpack webpack-cli webpack-dev-server --save-dev`
 
 - Setup Babel, it's loader and it's presets
-  ...`npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev`
+  `npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev`
 
 - Create a file named `.babelrc` in the root with this config code
-  ...
 
 ```
 {
@@ -23,7 +22,6 @@ Steps to reproduce this boilerplate on your own:
 ```
 
 - Create a file named `webpack.config.js` in the root to config Webpack with Babel
-  ...
 
 ```
 module.exports = {
@@ -42,11 +40,10 @@ module.exports = {
 ```
 
 - Setup HTML Webpack plugin and HTML loader
-  ...
+
   `npm install html-webpack-plugin html-loader --save-dev`
 
 - Config Webpack to produce an HTML page
-  ...
 
 ```
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -81,11 +78,10 @@ module.exports = {
 ```
 
 - Setup React and React DOM
-  ...
+
   `npm install react react-dom`
 
 - Create a folder in the root named `src` and a `index.js` file inside for this entry point React code
-  ...
 
 ```
 import React from "react";
@@ -98,7 +94,6 @@ ReactDOM.render(
 ```
 
 - Create a `index.html` file in the `src` folder with a div tag with the id of `app` inside the body tag
-  ...
 
 ```
 <!DOCTYPE html>
@@ -118,15 +113,12 @@ ReactDOM.render(
 ```
 
 - Add these scripts to the `package.json` file to run and build our app for both production and development
-  ...
 
 ```
-...
 "scripts": {
     "dev": "webpack-dev-server --mode development --open --hot",
     "production": "webpack --mode production"
 },
-...
 ```
 
 - Now you can run the app with `npm run dev` and start making React files in the src folder like usual
