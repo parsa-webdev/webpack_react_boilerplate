@@ -5,12 +5,15 @@ This boilerplate is used to write React code with Webpack.
 Steps to reproduce this boilerplate on your own:
 
 - Initialize package.json
+
   `npm init -y`
 
 - Setup Webpack, Webpack CLI and the Webpack Dev Server
+
   `npm install webpack webpack-cli webpack-dev-server --save-dev`
 
 - Setup Babel, it's loader and it's presets
+
   `npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev`
 
 - Create a file named `.babelrc` in the root with this config code
