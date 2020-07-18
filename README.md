@@ -117,6 +117,18 @@ ReactDOM.render(
 
 - Add these scripts to the `package.json` file to run and build our app for both production and development
 
+- To make Async/Await code work in the application, setup
+  `npm install @babel/plugin-transform-runtime @babel/runtime --save-dev`
+
+- Add the plugin to .babelrc file
+
+```
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["@babel/transform-runtime"]
+}
+```
+
 ```
 "scripts": {
     "dev": "webpack-dev-server --mode development --open --hot",

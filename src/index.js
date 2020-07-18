@@ -1,7 +1,4 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-ReactDOM.render(
-  <h1>React app built from scratch with Webpack</h1>,
-  document.getElementById("app")
-);
+import App from "../App.js";
+ReactDOM.render(<App />, document.getElementById("app"));
